@@ -1,0 +1,46 @@
+MapsContainer, Map {
+  height: calc(100vh - 176px);
+  overflow-y: hidden;
+}
+
+.backDrop {
+  position : fixed;
+  left : 0;
+  top : 0;
+  width : 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10000;
+}
+
+@media (max-width: 992px) {
+  MapsContainer, Map {
+      height: auto;
+      overflow: auto;
+  }
+}
+
+.unitPopup {
+  width : 250px;
+  height: 300px;
+  margin : auto;
+  left: 50%;
+  top: 20%;
+  z-index: 100011;
+  img {
+    max-height: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .unitPopup {
+    left: 20px;
+    top : 50px
+  }
+}
+@media (max-width: 767px) {
+  .mpCon {
+    height : 500px;
+    margin-bottom: 25px;
+  }
+}

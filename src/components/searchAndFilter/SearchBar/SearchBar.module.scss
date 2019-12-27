@@ -1,0 +1,91 @@
+.SearchBar {
+    min-height: 55px;
+    height: auto;
+    margin-top: 7px;
+    padding-bottom: 7px;
+    .preferences {
+        font-weight: bold;
+        color : #808080;
+        margin-right: 20px;
+    }
+    .toolTip {
+        position: absolute;
+        width : 280px;
+        height : auto;
+        visibility: hidden;
+        opacity: 0;
+        background-color : #2e2852;
+        z-index: 1001;
+        color : #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #fff;
+        padding : 15px;
+        transition: visibility 0s, opacity 0.3s linear;
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        .blockSpan {
+            display: block;
+            height: 35px;
+            svg {
+                margin-right: 10px;
+            }
+            span {
+
+            }
+        }
+        p {
+            
+        }
+    }
+}
+
+.optionsContainer {
+    button {
+        min-width : 160px;
+        width : auto;
+        height: 40px;
+        color : #808080;
+        border : 1px solid #808080;
+        border-radius: 7px;
+        margin-right: 15px;
+        svg {
+            margin-right: 10px;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 3px 10px 0px;
+            border-color: #5b6e7d;
+        }
+        &.bestSelected {
+            border-color : #ab31d3;
+            color : #ab31d3;
+            background-color : #f4e6fa;
+        }
+        &.lightSelected {
+            border-color : #d69d00;
+            color : #d69d00;
+            background-color : #faf3e0;
+        }
+        &.dogSelected {
+            border-color : #96331f;
+            color : #96331f;
+            background-color : #f9e7dd;
+        }
+        &.greenerySelected {
+            border-color : #acc453;
+            color : #acc453;
+            background-color : #eef3dc;
+        }
+    }
+}
+
+.area {
+
+}

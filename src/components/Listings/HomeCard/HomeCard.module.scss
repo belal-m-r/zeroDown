@@ -1,0 +1,127 @@
+.cardContainer {
+    width : 50%;
+    height : 400px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.HomeCard {
+    width : 100%;
+    height : 100%;
+    img {
+        height : 180px;
+    }
+}
+.pricesContainer {
+    display: flex;
+    width : 100%;
+    height : 48px;
+    color : #97A3AA;
+    span {
+        font-weight: bold;
+    }
+    p {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+.MonthlyPAy {
+    flex-grow: 1;
+    flex-basis: 0;
+    span {
+       color : #4aae83;
+    }
+}
+.ListedPrice {
+    flex-grow: 1;
+    flex-basis: 0;
+    border-left: 1px solid #ccc;
+    text-align: right;
+    span {
+        text-decoration: line-through;
+    }
+}
+hr {
+    margin : 10px 0;
+}
+.addressContainer {
+    h5 {
+        display: inline-block;
+        margin-bottom: 0;
+        color : #1f2a33;
+        font-size: 16px;
+    }
+    svg {
+        float: right;
+    }
+    p {
+        margin-bottom: 0;
+        color : #1f2a33;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+.data {
+    min-height : 35px;
+    height : auto;
+    div {
+        margin-right: 15px;
+        width: 40px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        color : #1f2a33;
+        svg {
+            color : #808080;
+        }
+        span {
+            font-weight: 600;
+        }
+        &:last-child {
+            width : auto;
+            min-width: 100px;
+        }
+    }
+}
+.Icons {
+    svg {
+        display: inline-block;
+        margin-right: 10px;
+
+    }
+}
+.faStar {
+    color : #ab31d3;
+}
+.faSun {
+    color : #d69d00;
+}
+.faDog {
+    color : #96331f;
+}
+.faTree {
+    color : #acc453;
+}
+
+@media (max-width: 1100px) {
+    .cardContainer {
+        height: 450px;
+    }
+}
+@media (max-width: 991px) {
+    .cardContainer {
+        width : 90%;
+        margin : auto;
+    }
+}
+@media (max-width: 767px) {
+    .cardContainer {
+        width : 50%;
+    }
+}
+@media (max-width: 511px) {
+    .cardContainer {
+        width : 100%;
+    }
+}

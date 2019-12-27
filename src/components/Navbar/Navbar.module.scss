@@ -1,0 +1,97 @@
+.navigationbar {
+    min-height : 80px;
+    height : auto;
+    background-color: #2e2852;
+    li {
+        float: right;
+        color : #fff;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        vertical-align: bottom;
+        font-size: 15px;
+        button {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+.container {
+    padding: 0;
+}
+.NavLnk {
+    width : 180px;
+    height: 48px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s all ease;
+    &:hover {
+        width : 200px;
+        border-bottom: 2px solid #fff;
+        font-size: 1.1rem;
+        font-weight: bolder;
+    }
+}
+
+.navbarCollapse {
+    flex-direction: row-reverse !important;
+}
+
+.afford {
+    width : 300px;
+    height: 40px;
+    button {
+        color : #fff;
+        height: 100%;
+        font-weight: bold;
+        background-color: #64c;
+        border : 1px solid #64c;
+        border-radius: 6px;
+        transition: 0.3s all ease;
+        padding: 0 13px;
+        &:hover {
+            background-color: #8a6ad9;
+            border-color: #8a6ad9;
+        }
+    }
+}
+.Login {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color : #fff;
+    font-weight: bold;
+    border : 1px solid #fff;
+    padding: 0 13px;
+    margin-left: 10px;
+    border-radius: 6px;
+    transition: 0.3s all ease;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.3)
+    }
+}
+
+.navbarBrand {
+    color : #fff !important;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.Toggler {
+    background-color : #fff;
+}
+
+@media (max-width: 991px) {
+    .navigationbar {
+        ul {
+            display: flex;
+            align-items: center;
+        }
+        li {
+            display: block;
+            margin-bottom: 7px;
+        }
+    }
+    .navbarCollapse {
+        flex-direction: column;
+    }
+}
